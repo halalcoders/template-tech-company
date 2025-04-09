@@ -1,3 +1,7 @@
-name = "template-tech-company"
+name = "your-project-name"
 compatibility_date = "2025-04-09"
-assets = "dist"
+main = "./dist/index.html"  # Optional but recommended
+
+[site]
+bucket = "./dist"  # ✅ Correct - points to your built files
+entry-point = "dist"  # Alternative syntax
