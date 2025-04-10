@@ -5,6 +5,20 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/",
+
+  // Add this build configuration:
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    // Ensure these are set for React router compatibility:
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+      },
+    },
+  },
+
   server: {
     host: "::",
     port: 8080,
