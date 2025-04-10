@@ -1,7 +1,3 @@
-name = "your-project-name"
+name = "template-tech-company"
 compatibility_date = "2025-04-09"
 main = "./dist/index.html"  # Optional but recommended
-
-[site]
-bucket = "./dist"  # ✅ Correct - points to your built files
-entry-point = "dist"  # Alternative syntax
